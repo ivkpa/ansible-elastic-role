@@ -1,0 +1,3 @@
+---
+# defaults file for elastic
+elastic_version: "7.10.1"
