@@ -2,7 +2,7 @@
 # tasks file for elastic
 - name: Upload .tar.gz file containing binaries from local storage
   copy:
-    src: "elasticsearch-{{ elastic_version }}-linux-x86_64.tar.gz"
+    src: "{{ playbook_dir }}/files/elasticsearch-{{ elastic_version }}-linux-x86_64.tar.gz"
     dest: "/tmp/elasticsearch-{{ elastic_version }}-linux-x86_64.tar.gz"
     mode: '0755'
   register: download_elastic_binaries
